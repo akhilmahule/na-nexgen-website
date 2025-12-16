@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NA NexGen | Where Ideas Take Shape</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f1115;
+      color: #eaeaea;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #0b0d11;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: #eaeaea;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #00d1ff;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #b5b5b5;
+    }
+    .products {
+      padding: 60px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #161a22;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card p {
+      color: #bdbdbd;
+      font-size: 0.95rem;
+    }
+    .buy-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #00d1ff;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .buy-btn:hover {
+      background: #00a8cc;
+    }
+    footer {
+      background: #0b0d11;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <img src="wmremove-transformed.png" alt="NA NexGen Logo" />
+    <nav>
+      <a href="#">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>NA NexGen</h1>
+    <p>Where Ideas Take Shape – 3D Printed Gifts, DIY Kits & Custom Models</p>
+  </section>
+
+  <section class="products" id="projects">
+    <div class="card">
+      <h3>3D Printed Name Lamp</h3>
+      <p>Customised LED name lamp made using high quality 3D printing.</p>
+      <a class="buy-btn" href="https://www.meesho.com/" target="_blank">Buy on Meesho</a>
+    </div>
+
+    <div class="card">
+      <h3>Educational DIY Kit</h3>
+      <p>STEM based DIY kit for students – learn by building.</p>
+      <a class="buy-btn" href="https://www.meesho.com/" target="_blank">Buy on Meesho</a>
+    </div>
+
+    <div class="card">
+      <h3>3D Model Gift Item</h3>
+      <p>Unique desk decor & gift items printed with precision.</p>
+      <a class="buy-btn" href="https://www.meesho.com/" target="_blank">Buy on Meesho</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 NA NexGen | Small Startup – Big Ideas</p>
+    <p>Order securely via Meesho</p>
+  </footer>
+
+</body>
+</html>
