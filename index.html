@@ -15,13 +15,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 25px 50px;
-      background: #0b1533;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+      padding: 40px 60px; /* top blue bar ki chourai badhai */
+      background: linear-gradient(90deg, #0b1533, #10245c);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.8);
     }
     header img {
-      height: 90px;
-      max-width: 220px;
+      height: 120px;        /* logo height bada */
+      width: 360px;         /* landscape me width badhai */
+      object-fit: contain;  /* logo stretch na ho */
     }
     nav a {
       color: #eaeaea;
@@ -57,6 +58,22 @@
       padding: 20px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.5);
       transition: transform 0.3s;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background: #0b0d11;
+      padding: 10px;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #00d1ff;
+      margin: 10px 0;
     }
     .card:hover {
       transform: translateY(-8px);
@@ -103,11 +120,30 @@
   </header>
 
   <section class="hero">
+    <div style="margin-bottom:30px;">
+      <button class="buy-btn">🎁 Gifts</button>
+      <button class="buy-btn">🧩 DIY Kits</button>
+      <button class="buy-btn">💡 Lamps</button>
+    </div>
     <h1>NA NexGen</h1>
     <p>Where Ideas Take Shape – 3D Printed Gifts, DIY Kits & Custom Models</p>
   </section>
 
   <section class="products" id="projects">
+    <h2 style="grid-column:1/-1; text-align:center; color:#00d1ff;">🌟 Featured Products</h2>
+    <div style="grid-column:1/-1; text-align:center; margin-bottom:20px;">
+      <a class="buy-btn" href="https://www.meesho.com/" target="_blank">🛒 View All on Meesho</a>
+      <a class="buy-btn" style="margin-left:10px; background:#25D366;" href="https://wa.me/917415586567" target="_blank">📱 Order on WhatsApp</a>
+    </div>
+    <!-- Product 1: Moon Lamp -->
+    <div class="card">
+      <div style="background:#ff9800; color:#000; padding:5px 10px; border-radius:20px; display:inline-block; font-size:0.8rem; font-weight:bold; margin-bottom:10px;">⭐ Bestseller</div>
+      <img src="ChatGPT Image Dec 15, 2025, 08_05_28 PM.png" alt="3D Printed Moon Lamp" />
+      <h3>3D Printed Moon Lamp</h3>
+      <p>Beautiful 3D printed moon lamp with wooden stand. Perfect for home decor & gifting.</p>
+      <div class="price">₹599</div>
+      <a class="buy-btn" href="https://www.meesho.com/" target="_blank">Buy on Meesho</a>
+    </div>
     <div class="card">
       <h3>3D Printed Name Lamp</h3>
       <p>Customised LED name lamp made using high quality 3D printing.</p>
